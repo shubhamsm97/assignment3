@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js" defer></script> 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #ccc;
+        }
+        input {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ced7e3c4;
+            border-radius:5px;
+        }
+        #selectgender {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ced7e3c4;
+            border-radius:5px;
+        }
+        .child_1 {
+            background-color: #bfc5d6;
+            padding: 30px;
+           
+        }
+        button {
+            float: right; 
+            width: 100px; 
+            border-radius:10px; 
+            padding:5px; 
+            border: 1px solid black; 
+            background-color: rgb(100, 100, 225); 
+            color: white;
+        }
+        @media (max-width:600px){
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items:start;
+                justify-content: space-around;
+                
+            }
+            input {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="container">
+                <div class="child">
+                    <label for="name">Fist Name</label>
+                    <div class="input"><input type="text" placeholder="first_name" id="name"> </div>
+                </div>
+
+
+                <div class="child">
+                    <label for="last_name">Last Name</label>
+                    <div class="input"><input type="text" placeholder="last_name" id="last_name"></div>
+                </div>
+
+
+                <div class="child child_email">
+                    <label for="email">Enter your Email</label>
+                    <div class="input"><input type="text" placeholder="Email" id="email" ></div>
+                </div>
+
+
+                <div class="child" >
+                    <label for="passw">Enter your passward</label>
+                    <div class="input"> <input type="password" placeholder="Passward" id="passw" onclick="fun();" ></div>
+                </div>
+
+
+                <div class="child">
+                    <label for="cpass">Confirm Your Passward</label>
+                    <div class="input"> <input type="password" placeholder="Confirm Passward" id="cpass"></div>
+                </div>
+
+                <div class="child">
+                    <label for="age">Age</label>
+                    <div class="input"> <input type="number" placeholder="enter your age" id="age"></div>
+                </div>
+
+                <div class="child">
+                    <label for="gender">Gender</label>
+                    <div class="input">
+                         <select id="selectgender" onclick="ages();">
+                            <option value="select">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        </div>
+                </div>
+
+            <div class="child_1">
+                <input type="checkbox" style="width: fit-content;"><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate alias id sapiente eligendi! Beatae sequi, in dicta omnis incidunt quis perferendis debitis repellat officia libero odio explicabo quo blanditiis culpa harum nostrum optio asperiores dignissimos corporis. Maiores, officia quaerat perspiciatis error eos earum tempore a expedita accusantium eligendi. Neque, quidem?</p><br>
+                <button id="btn" onclick="alert('your form submited sucessfully')">Submit</button>
+            </div>
+        </div>
+</body>
+</html>
