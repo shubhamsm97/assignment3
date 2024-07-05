@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment6.3</title>
+    <script src="assignment7.3.js"></script>
+    <style>
+        * {
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main {
+            display:flex;
+            flex-direction: column;
+        }
+        input{
+            border:1px solid rgba(34,154,200,1);
+            border-radius: 5px;
+        }
+        .color_input {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            margin-top: 30px;
+        }
+        .color_input p {
+            width: 400px;
+            margin-bottom: 20px;
+        }
+        .color_input input {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: rgb(80, 80, 250);
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="main">
+            <label for="form__input">First name</label>
+            <div><input type="text" name="" id="form__input"></div>
+            <label for="form__input1">Last name</label>
+            <div><input type="text" name="" id="form__input1"></div>
+            <label for="form__input2">Father name</label>
+            <div> <input type="email" name="" id="form__input2"></div>
+        </div>
+    </form>
+
+    <div class="color_input">
+        <p>We have facilities of change the background color of the input  </p>
+        <label for="red_color">R</label>
+        <input type="number" name="" id="red_color">
+        <label for="green_color">G</label>
+        <input type="number" name="" id="green_color">
+        <label for="blue_color">B</label>
+        <input type="number" name="" id="blue_color">
+        <button onclick="color_input()">submit</button>
+    </div>
+</body>
+</html> 
