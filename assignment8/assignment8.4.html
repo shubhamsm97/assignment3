@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5:</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .A {
+            width: 200PX;
+            height: 200PX;
+            background-color: aqua;
+            position: relative;
+        }
+        .B {
+            width: 200PX;
+            height: 200PX;
+            background-color: red;
+            position:absolute;
+            top:0px;
+            z-index: -4;/*the value of z index is change -ve to +ve*/
+        }
+    </style>
+</head>
+<body>
+    <h2>Z-index</h2>
+    <p>z-index is a way to represent the layer of top side if any css style has z-index is high they came top most layer</p>
+    
+    <div class="A">.
+        <div class="B"></div>
+    </div>
+
+    
+</body>
+</html>
